@@ -1,7 +1,7 @@
 import { test, expect }  from '@playwright/test';
 
 test ('Get user by id', async ({request}) => {
-    const response = await request.get('https://jsonplaceholder.typicode.com/users/1');
+    const response = await request.get('/users/1');
     expect( response.status()).toBe(200);
     const body = await response.json();
     expect( body.id).toBe(1);
@@ -11,7 +11,7 @@ test ('Get user by id', async ({request}) => {
 });
 
 test ('Negative test for user by id', async ({request}) => {
-    const response = await request.get('https://jsonplaceholder.typicode.com/users/999999');
+    const response = await request.get('/users/999999');
     expect( response.status()).toBe(404);
 
 });
