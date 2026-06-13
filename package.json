@@ -1,20 +1,21 @@
 {
-  "name": "playwright-api-framework",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.2",
-    "eslint": "^10.5.0",
-    "globals": "^17.6.0",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.0"
-  }
+    "name": "playwright-api-framework",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "@playwright/test": "^1.60.0",
+        "@types/node": "^25.9.2",
+        "eslint": "^10.5.0",
+        "globals": "^17.6.0",
+        "prettier": "^3.8.4",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.61.0"
+    }
 }
