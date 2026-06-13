@@ -1,5 +1,5 @@
 import { test, expect }  from '@playwright/test';
-import { testUser } from '../data/users';
+import { newUser, testUser } from '../data/users';
 import { UsersClient } from '../api-clients/users.client';
 import { User } from '../types/user';
 
@@ -20,3 +20,16 @@ test ('Negative test for user by id', async ({request}) => {
     expect( response.status()).toBe(404);
 
 });
+
+test ('Should create a new user', async ({request}) => {
+    const createUsersClient = new UsersClient(request);
+    const response = await createUsersClient.createUser(newUser)
+    expect( response.status()).toBe(201);
+    const body: User = await response.json();
+    expect( body.id ).toBeDefined();
+    expect ( body.name ).toBe(newUser.name);
+    expect ( body.email ).toBe(newUser.email);
+
+});
+
+// npx playwright test -g "Should create a new user"

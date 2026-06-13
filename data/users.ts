@@ -3,3 +3,8 @@ export const testUser = {
     name: 'Leanne Graham',
     email: 'Sincere@april.biz'
 };
+
+export const newUser = {
+    name: 'Paul',
+    email: 'paul@test.com'
+};
