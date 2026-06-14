@@ -1,5 +1,7 @@
 # Playwright API Framework
 
+![Playwright Tests](https://github.com/paulfalcon77/playwright-api-framework/actions/workflows/playwright.yml/badge.svg)
+
 API test automation framework built with Playwright and TypeScript.
 
 ## Features
@@ -76,6 +78,16 @@ npx playwright test -g "Should create a new user"
 - Node.js
 - Git
 - GitHub
+
+## Future Improvements
+
+- Add API request and response logging
+- Add JSON schema validation
+- Integrate Allure reporting
+- Add environment configuration support
+- Add test data factories
+- Add API coverage for update and delete scenarios
+- Add Docker support
 
 ## Author
 
